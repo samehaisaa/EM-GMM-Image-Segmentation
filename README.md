@@ -42,13 +42,13 @@ In this animation:
    ```bash
    pip install -r requirements.txt
 
-## Usage
+## Inference 
 
 1. Run EM Visualization on Synthetic Data:
    ```bash
    python examples/run_em_visualization.py
 
-   This script animates the iterative EM steps, showing Gaussian components adjusting to cluster the data.
+- This script animates the iterative EM steps, showing Gaussian components adjusting to cluster the data.
 
 2. Perform Image Segmentation
    ```bash
