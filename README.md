@@ -10,6 +10,19 @@ This repository contains a Python implementation of the Expectation-Maximization
 - Plotting of Gaussian components as ellipses representing the covariance structure
 - Flexibility for adapting the code to image segmentation tasks
 
+## Image Description
+
+Here’s a screenshot of the animation showing the evolution of clusters during the EM algorithm. This image visualizes how the Gaussian Mixture Model is used to segment data points and the Gaussian components (ellipses) represent the clusters.
+
+![GMM Animation Screenshot](./figs/EMM.png)
+
+In this animation:
+- The gray points represent the data points.
+- The red ellipses represent the Gaussian components fitted to the data points.
+- The GMM updates these components during each iteration of the Expectation-Maximization (EM) algorithm.
+
+
+
 ## Requirements
 
 - Python 3.x
