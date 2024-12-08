@@ -14,7 +14,7 @@ n_clusters = 3
 X, y_true = make_blobs(n_samples=n_samples, centers=n_clusters, cluster_std=1.5, random_state=42)
 
 # Add random noise to the data
-noise = np.random.randn(n_samples, n_features) * 5  # Adjust the scale of the noise
+noise = np.random.randn(n_samples, n_features) * 20  # Adjust the scale of the noise
 X_noisy = X + noise
 
 # Initialize Gaussian Mixture Model (GMM) with sklearn
