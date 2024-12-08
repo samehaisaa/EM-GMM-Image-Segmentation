@@ -37,3 +37,19 @@ In this animation:
    ```bash
    git clone https://github.com/samehaisaa/EM-GMM-Image-Segmentation.git
    cd EM-GMM-Image-Segmentation
+## Usage
+2. Install dependencies
+   ```bash
+   pip install -r requirements.txt
+
+## Usage
+
+1. Run EM Visualization on Synthetic Data:
+   ```bash
+   python examples/run_em_visualization.py
+
+   This script animates the iterative EM steps, showing Gaussian components adjusting to cluster the data.
+
+2. Perform Image Segmentation
+   ```bash
+   python src/applications/image_segmentation.py --image data/images/sample_image.jpg
