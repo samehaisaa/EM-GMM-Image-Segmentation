@@ -50,6 +50,13 @@ In this animation:
 
 - This script animates the iterative EM steps, showing Gaussian components adjusting to cluster the data.
 
+- Below is a GIF demonstrating the application of the EM-GMM algorithm to segment regions of a brain image. The histogram shows three distinct peaks corresponding to different intensity regions in the image. The algorithm iteratively clusters the regions, aligning them to these peaks.
+
+![Brain Segmentation GIF](./figs/EMit.gif)
+
+- **Upper Panel:** The original brain image and its histogram.
+- **Below Panel:** Iterative segmentation process, showing the regions corresponding to the three peaks.
+
 2. Perform Image Segmentation
    ```bash
    python src/applications/image_segmentation.py --image data/images/sample_image.jpg
