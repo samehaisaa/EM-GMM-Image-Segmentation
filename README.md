@@ -14,7 +14,7 @@ This repository contains a Python implementation of the Expectation-Maximization
 
 Here’s a screenshot of the animation showing the evolution of clusters during the EM algorithm. This image visualizes how the Gaussian Mixture Model is used to segment data points and the Gaussian components (ellipses) represent the clusters.
 
-![GMM Animation Screenshot](./figs/EMM.png)
+![GMM Animation Screenshot](./figs/GMM.png)
 
 In this animation:
 - The gray points represent the data points.
