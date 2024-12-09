@@ -11,10 +11,10 @@ plt.ion()
 n_samples = 500
 n_features = 2
 n_clusters = 3
-X, y_true = make_blobs(n_samples=n_samples, centers=n_clusters, cluster_std=1.5, random_state=42)
+X, y_true = make_blobs(n_samples=n_samples, centers=n_clusters, clu__init__ster_std=1.5, random_state=42)
 
 # Add random noise to the data
-noise = np.random.randn(n_samples, n_features) * 20  # Adjust the scale of the noise
+noise = np.random.randn(n_samples, n_features) * 10  # Adjust the scale of the noise
 X_noisy = X + noise
 
 # Initialize Gaussian Mixture Model (GMM) with sklearn
@@ -40,7 +40,7 @@ def plot_gaussian(mean, cov, ax, label):
     """Plot an ellipse representing a 2D Gaussian."""
     # Compute the ellipse for the covariance matrix
     v, w = np.linalg.eigh(cov)
-    v = 2.0 * np.sqrt(2.0) * np.sqrt(v)  # 2 standard deviations
+    v = 1.3 * np.sqrt(2.0) * np.sqrt(v)  # 2 standard deviations
     u = w[0] / np.linalg.norm(w[0])  # Eigenvector
     
     angle = np.arctan2(u[1], u[0])
@@ -52,7 +52,7 @@ def plot_gaussian(mean, cov, ax, label):
     ax.scatter(mean[0], mean[1], c='red', s=100, zorder=10, label=label)
 
 # Fit the GMM and visualize each iteration
-for i in range(10):  # Set number of iterations to visualize
+for i in range(50):  # Set number of iterations to visualize
     gmm.fit(X_noisy)  # Use the noisy data to see more changes
     plot_iteration(i+1, gmm, X_noisy, ax)
 
