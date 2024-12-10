@@ -16,8 +16,7 @@ Here’s a screenshot of the animation showing the evolution of clusters during 
 
 
 
-![GMM Animation Screenshot](./figs/GMM.png)
-
+![Brain Segmentation GIF](./figs/EMit.gif)
 In this animation:
 - The gray points represent the data points.
 - The red ellipses represent the Gaussian components fitted to the data points.
