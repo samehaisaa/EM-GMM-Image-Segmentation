@@ -14,6 +14,8 @@ This repository contains a Python implementation of the Expectation-Maximization
 
 Here’s a screenshot of the animation showing the evolution of clusters during the EM algorithm. This image visualizes how the Gaussian Mixture Model is used to segment data points and the Gaussian components (ellipses) represent the clusters.
 
+
+
 ![GMM Animation Screenshot](./figs/GMM.png)
 
 In this animation:
@@ -52,10 +54,12 @@ In this animation:
 
 - Below is a GIF demonstrating the application of the EM-GMM algorithm to segment regions of a brain image. The histogram shows three distinct peaks corresponding to different intensity regions in the image. The algorithm iteratively clusters the regions, aligning them to these peaks.
 
-![Brain Segmentation GIF](./figs/EMit.gif)
+![GMM Animation Screenshot](./figs/GMM.png)
 
-- **Upper Panel:** The original brain image and its histogram.
-- **Below Panel:** Iterative segmentation process, showing the regions corresponding to the three peaks.
+In this animation:
+- The gray points represent the data points.
+- The red ellipses represent the Gaussian components fitted to the data points.
+- The GMM updates these components during each iteration of the Expectation-Maximization (EM) algorithm.
 
 2. Perform Image Segmentation
    ```bash
